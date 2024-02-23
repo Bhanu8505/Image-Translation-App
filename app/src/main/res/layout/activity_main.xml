@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarTrackVertical="@drawable/smp_1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/smp_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/fromLangs"
+                android:layout_width="127dp"
+                android:layout_weight="1"
+                android:layout_height="47dp"/>
+
+            <Spinner
+                android:id="@+id/langs"
+                android:layout_width="127dp"
+                android:layout_weight="1"
+                android:layout_height="47dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/gallery"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/purple_700"
+                android:text="Gallery"
+                android:layout_weight="1"
+                android:layout_marginRight="1dp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/buttonTranslate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@color/purple_700"
+                android:text="Translate"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+
+
+
+        <EditText
+            android:id="@+id/textViewTranslatedText"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="textMultiLine"
+            android:longClickable="false" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
